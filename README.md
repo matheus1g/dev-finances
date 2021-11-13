@@ -20,4 +20,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 A ideia da construação veio a partir da maratona da Rocketseat com o instrutor **Maykbrito**. Na onde nos acompanhou com video aulas a para a crianção desse projeto que disponibilizou video aulas do projeto.
 
 ## Licença ⚖️
-Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](https://github.com/NyctibiusVII/Dev.Finances/blob/master/LICENSE) para mais detalhes.
+Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](https://github.com/matheus1g/dev-finances/blob/main/LICENSE) para mais detalhes.
