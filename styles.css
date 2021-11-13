@@ -197,8 +197,13 @@ td.expense {
 }
 
 
-.card.total{
+.card.total.positive{
   background: var(--green);
+  color: #fff;
+}
+
+.card.total.negative{
+  background: #e92929;
   color: #fff;
 }
 

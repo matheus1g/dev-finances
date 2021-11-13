@@ -5,6 +5,25 @@ const Modal = {
   }
 }
 
+const cardColor = {
+
+
+    negative(){
+      document.querySelector("#ctotal")
+        .classList.remove("positive")
+      document.querySelector("#ctotal")
+        .classList.add("negative")
+    },
+
+    positive(){
+      document.querySelector("#ctotal")
+        .classList.remove("negative")
+      document.querySelector("#ctotal")
+        .classList.add("positive")
+    }
+}
+
+
 const Storage = {
   get() {
     return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
@@ -92,7 +111,17 @@ const DOM = {
     .innerHTML = Utils.formatCurrency(Transaction.expenses())
 
     document.querySelector("#totalDisplay")
-    .innerHTML = Utils.formatCurrency(Transaction.total())
+    .innerHTML = Utils.formatCurrency(Transaction.total()) 
+
+  },
+  totalCard(){
+
+    if(Transaction.total()<0){
+      cardColor.negative()
+    } else {
+      cardColor.positive()
+    }
+
   },
 
   clearTransaction(){
@@ -192,17 +221,14 @@ const Form = {
   }
 }
 
-
-
-
-
 const App = {
   init(){
     Transaction.all.forEach((transaction, index) => {
       DOM.addTransaction(transaction, index)
     })
-    
+        
     DOM.updateBalance()
+    DOM.totalCard()
 
     Storage.set(Transaction.all)
   },
