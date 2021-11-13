@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-    <img src="./.github/logo-dev-finances.png" width="500" heigh="150" alt="logo Dev.Finances">
+
 </h1>
-# Dev.Finances <img src=".github/logo-icon.png" width="40" alt="logo icon"><img src=".github/logo-icon.png" width="40" alt="logo icon"><img src=".github/logo-icon.png" width="40" alt="logo icon">
+# Dev.Finances
 Projeto desenvolvido para administrar melhor ganhos e gastos. Projeto realizado na Maratona Discover @Rocketseat.
 
 #### Funcionalidades
